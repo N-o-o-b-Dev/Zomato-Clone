@@ -227,3 +227,155 @@ left: 0;
     margin: 3rem 0;
 
 }
+
+
+/* get the app section */
+
+.get-app-section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(255, 251, 247);
+    width: 100%;
+    padding: 3rem 6rem;
+}
+
+.semi-container
+{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+
+
+.left{
+    flex: 2;
+
+}
+
+.left img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.right{
+    display: flex;
+    flex: 3;
+    height: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.right h1{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.right p{
+    font-size: 0.8rem;
+}
+
+.radio-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.radio-container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.radio-container div input{
+    accent-color:rgb(239,79,95);
+    height: 15px;
+    width: 15px;
+   
+}
+
+.input-container{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.input-container input{
+    flex:auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-container button{
+    border: none;
+    background-color: rgb(239,79,95);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.input-container button, .input-container input{
+    padding: 15px;
+}
+
+.download-app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+
+.download-app-container h5{
+color: grey;
+font-weight: 500;
+
+}
+
+.download-app-container div{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.download-app-container div img{
+    width: 35%;
+}
+
+@media only screen and (max-width:1200px) {
+    .left, .right{
+        flex: 1;
+    }
+
+    .semi-container{
+        width: 80%;
+    }
+
+    
+}
+
+
+@media only screen and (max-width:900px){
+    .get-app-section{
+        padding: 2rem 0;
+    }
+    .semi-container{
+        width: 90%;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .get-app-section{
+        padding: 3rem 0;
+    }
+    .semi-container{
+        width: 90%;
+        flex-direction: column;
+    }
+}
